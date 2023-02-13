@@ -1,10 +1,7 @@
-name: plan-apply
-# runs a plan or apply -auto-approve in a target dir
-
-on:
-  push:
-
+on: push
 jobs:
-  plan-apply:  
-    - name: HashiCorp - Setup Terraform
-      uses: hashicorp/setup-terraform@v2.0.3
+  job1:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: hashicorp/setup-terraform@v2.0.3
+
